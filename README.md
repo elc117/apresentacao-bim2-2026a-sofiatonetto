@@ -19,7 +19,11 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 * **Código 1:**
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 42 16" src="https://github.com/user-attachments/assets/c6a28416-6d02-48f9-9c04-760346f953c4" />
 
-* **Código 2:** 
+* **Código 2:**
+<img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 54 36" src="https://github.com/user-attachments/assets/1b1281c0-3054-42fd-ad56-4217f3d8fe7c" />
+
+* **Testando outras formas:**
+<img width="658" height="408" alt="Screen Recording 2026-05-10 at 19 12 43" src="https://github.com/user-attachments/assets/1337f40e-e39d-4ae0-bfbc-78e65f931ce9" />
 
 ### Dificuldades
 Durante um commit, ocorreu um problema de versionamento no meu github local e servidor, porque editei meu Readme e criei outros arquivos, então precisei sincronizar as versões. Para isso utilizei `git pull --rebase`.
