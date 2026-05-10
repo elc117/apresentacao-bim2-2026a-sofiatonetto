@@ -34,44 +34,75 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 ## Parte Teórica: Análise das Questões
 
 ### Do primeiro código:
-**11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.** 
-<br> 
-* "...": 
+**11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.**
+- **`String.format()`**
+```
+return name + "," + id + "," + String.format("%.1f", grade);
+```
+- **`split(String regex)`**  
+```
+  String[] values = line.split(",");
+```
+- **`Double.parseDouble()`**  
+```
+  double grade = Double.parseDouble(values[2]);
+```
+- **Concatenação**  
+```
+  return name + "," + id + "," + String.format("%.1f", grade);
+```
+- **`String.valueOf()`**  
+```
+  String id = String.valueOf(1000 + i);
+```
+- **`indexOf(String)` e `indexOf(String, int)`**  
+```
+  int startIndex = json.indexOf("\"name\":") + 8;
+  int firstNameIndex = json.indexOf("\"first\"", startIndex) + 9;
+```
+- **`substring(int begin, int end)`**  
+```
+  String firstName = json.substring(firstNameIndex, firstNameEnd);
+  String lastName = json.substring(lastNameIndex, lastNameEnd);
+```
+- **`StringBuilder.append()` e `StringBuilder.toString()`**  
+```
+  StringBuilder response = new StringBuilder();
+  response.append(line);
+  return response.toString();
+```
+- **`BufferedReader.readLine()`**  
+```
+  String line = br.readLine();
+  while ((line = br.readLine()) != null) { ... }
+```
 
-* String.valueOf():
-
-* String.format():
-<br> ```String.format("%.1f", grade);```
-
-* StringBuilder.toString():
-
-indexOf(String)
-
-indexOf(String, int startIndex)
-
-substring(int begin, int end)
-
-split(String regex):
-<br> ```String[] values = line.split(",");```
-
-Concatenação
-<br> ```public String toString() {
-        return name + "," + id + "," + String.format("%.1f", grade);
-}```
-
-StringBuilder.append()
-
-BufferedReader.readLine()
-
-Double.parseDouble() (Conversão de String para double)
 <br>
-```double grade = Double.parseDouble(values[2])```
-<br>
+
 **16 -> Se trocarmos o nome da classe StudentGrades por Main, teremos erro de compilação. O que fazer para trocar o nome e não ter erro de compilação?**
 
+Quando tem um código em Java, o nome do arquivo tem que ser o mesmo nome usado no `public class`. 
+
+Para trocar o nome pode-se trocar o nome no código, então trocar `public class StudentGrades` por `public class Main`. Também pode-se renomear o arquivo, ou seja, o arquivo passa a se chamar `Main.java` não mais `StudentGrades.java`. Ou pode-se mudar a forma de comilar e executar o código: `javac Main.java` e `java Main`.
+
+---
+
 ### Do segundo código:
+
 **6 -> Encontre 2 linhas no código onde é feita a criação de algum objeto.**
 
+- **Criação de um objeto `ArrayList`:**
+```java
+  List students = new ArrayList<>();
+```
+  É criado um objeto da classe `ArrayList`, que implementa a interface `List`, para armazenar os estudantes lidos do CSV.
+
+- **Objeto `Student`:**
+```
+  Student student = new Student(name, id, grade);
+```
+Cria o objeto da classe `Student`, que chama o construtor que define e incializa os atributos: nome, id e nota lidos do arquivo CSV. 
+  
 ---
 
 ## Parte Exploratória: 
