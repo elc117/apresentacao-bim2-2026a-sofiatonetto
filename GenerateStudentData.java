@@ -96,7 +96,7 @@ public class GenerateStudentData {
 
     public static void main(String[] args) {
         List<Student> students = RandomStudentGenerator.generateStudents(10); // Generate 10 students
-        writeCSV(students, "morestudents.csv"); // Write to CSV file
+        writeCSV(students, "students.csv"); // Write to CSV file
     }
 
 
