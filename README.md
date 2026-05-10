@@ -4,6 +4,12 @@ apresentacao-bim2-2026a-sofiatonetto created by GitHub Classroom
 # Parte Prática
 Fui tentar fazer no VS Code, pois não tenho mais a licença da Java IDE, mas estava com problemas, pois mesmo com todos as extensões necessárias já instaladas, não estava reconhencendo. Por esse motivo, fiz no CodeSpace do meu respositório de apresentação. 
 
+Já no CodeSpace criei os arquivos com o mesmo nome das public class do código para que reconhecesse e colei os códigos da aula. 
+Para compilar:
+        javac StudentGrades.java
+Para executar:
+        java StudentGrades
+
 
 você deve executar ambos os códigos da aula passada e gerar alguma evidência de execução (GIF ou vídeo). Para execução, pode ser usado algum ambiente indicado nos slides da aula passada, ou qualquer outro. Anotar como foi a escolha do ambiente e o processo de execução (alguma dúvida, dificuldade, facilidade?).
 # Referências 
