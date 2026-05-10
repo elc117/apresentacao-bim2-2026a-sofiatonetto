@@ -34,8 +34,8 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 ## Parte Teórica: Análise das Questões
 
 ### Do primeiro código:
-**11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.**
-**15 -> Substitua student.getGrade() por student.grade. Explique o que acontece na compilação do código.**
+**11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.** 
+<br>
 **16 -> Se trocarmos o nome da classe StudentGrades por Main, teremos erro de compilação. O que fazer para trocar o nome e não ter erro de compilação?**
 
 ### Do segundo código:
