@@ -35,6 +35,37 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 
 ### Do primeiro código:
 **11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.** 
+<br> 
+* "...": 
+
+* String.valueOf():
+
+* String.format():
+<br> ```String.format("%.1f", grade);```
+
+* StringBuilder.toString():
+
+indexOf(String)
+
+indexOf(String, int startIndex)
+
+substring(int begin, int end)
+
+split(String regex):
+<br> ```String[] values = line.split(",");```
+
++ (Concatenação)
+<br> ```public String toString() {
+        return name + "," + id + "," + String.format("%.1f", grade);
+}```
+
+StringBuilder.append()
+
+BufferedReader.readLine()
+
+Double.parseDouble() (Conversão de String para double)
+<br>
+```double grade = Double.parseDouble(values[2])```
 <br>
 **16 -> Se trocarmos o nome da classe StudentGrades por Main, teremos erro de compilação. O que fazer para trocar o nome e não ter erro de compilação?**
 
@@ -50,3 +81,5 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 // 
 # Referências:
 * [Material aula 1 POO](https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2026a/main/classes/19/README.md#7)
+* [String em Java](https://www.devmedia.com.br/trabalhando-com-string-string-em-java/21737)
+* [Strings e Java](https://www.devmedia.com.br/string-em-java-entendendo-e-utilizando-essa-classe/25503?utm_dev=google_ads_pmax&gad_source=1&gad_campaignid=22326280955&gbraid=0AAAAADrVyXFMgoL1TqNUefVs3dqW8U84K&gclid=Cj0KCQjw2YDQBhD_ARIsAE1qeSfFeTPUqMqHY_OcThJfmwoNEm58WpaLUpGcT2AxwxIiYO7vm1tn7TcaAtQgEALw_wcB)
