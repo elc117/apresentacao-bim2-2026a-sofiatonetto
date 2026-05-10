@@ -54,7 +54,7 @@ substring(int begin, int end)
 split(String regex):
 <br> ```String[] values = line.split(",");```
 
-+ (Concatenação)
+Concatenação
 <br> ```public String toString() {
         return name + "," + id + "," + String.format("%.1f", grade);
 }```
