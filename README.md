@@ -38,4 +38,4 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 * **Trecho do Código:**
 // 
 # Referências:
-*Material aula 1 POO: [https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2026a/main/classes/19/README.md#7]
+*[Material aula 1 POO]: (https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2026a/main/classes/19/README.md#7)
