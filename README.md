@@ -13,7 +13,6 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 - Para executar: `java StudentGrades`
 
 <img width="350" height="300" alt="Screen Recording 2026-05-10 at 18 31 03" src="https://github.com/user-attachments/assets/fe27a65c-f607-4ae8-acf4-13c9a572d671" />
-<br> Isso acontece pelo fato de eu não ter nenhum arquivo .csv na pasta e por isso ele não encontra nenhum, para resolver, foi criado o `students.csv`.
 
 ### Evidências de Execução
 * **Código 1:**
@@ -26,7 +25,9 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 19 12 43" src="https://github.com/user-attachments/assets/1337f40e-e39d-4ae0-bfbc-78e65f931ce9" />
 
 ### Dificuldades
-Durante um commit, ocorreu um problema de versionamento no meu github local e servidor, porque editei meu Readme e criei outros arquivos, então precisei sincronizar as versões. Para isso utilizei `git pull --rebase`.
+* GitHub: Durante um commit, ocorreu um problema de versionamento no meu github local e servidor, porque editei meu Readme e criei outros arquivos, então precisei sincronizar as versões. Para isso utilizei `git pull --rebase`.
+* Execução: EU não tinha criado o arquivo `students.csv` então apareceu o erro do primeiro gif, então criei o arquivo e consegui executar o código.
+* Execução: Após executar o código Generate e Student, o `students.csv` ficou vazio, percebi que isso aconteceu porque o código do GenerateStudentData criava uma planilha e colocava os 10 gerados na `morestudents.csv` por isso não aparecia nada e a média era 0. Então para testar alterei e executei novamente, obtendo resultado diferente (último gif). 
 
 ---
 
