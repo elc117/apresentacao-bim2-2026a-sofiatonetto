@@ -12,6 +12,8 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 - Para compilar: `javac StudentGrades.java`
 - Para executar: `java StudentGrades`
 
+<img width="250" height="200" alt="Screen Recording 2026-05-10 at 18 31 03" src="https://github.com/user-attachments/assets/fe27a65c-f607-4ae8-acf4-13c9a572d671" />
+
 ### Dificuldades e Facilidades
 
 ### Evidências de Execução
