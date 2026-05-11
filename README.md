@@ -19,11 +19,11 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 42 16" src="https://github.com/user-attachments/assets/c6a28416-6d02-48f9-9c04-760346f953c4" />
 
 * **Código 2:**
-<img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 54 36" src="https://github.com/user-attachments/assets/1b1281c0-3054-42fd-ad56-4217f3d8fe7c" />
+<img width="658" height="408" alt="Screen Recording 2026-05-10 at 22 13 25" src="https://github.com/user-attachments/assets/4aa0d406-e63d-46f8-9087-61042a4cae6f" />
 
 * **Testando outras formas:**
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 19 12 43" src="https://github.com/user-attachments/assets/1337f40e-e39d-4ae0-bfbc-78e65f931ce9" />
-
+<img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 54 36" src="https://github.com/user-attachments/assets/1b1281c0-3054-42fd-ad56-4217f3d8fe7c" />
 ### Dificuldades
 * GitHub: Durante um commit, ocorreu um problema de versionamento no meu github local e servidor, porque editei meu Readme e criei outros arquivos, então precisei sincronizar as versões. Para isso utilizei `git pull --rebase`.
 * Execução: EU não tinha criado o arquivo `students.csv` então apareceu o erro do primeiro gif, então criei o arquivo e consegui executar o código.
@@ -35,46 +35,32 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 
 ### Do primeiro código:
 **11 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings.**
-- **`String.format()`**
+
+* **`String.format()`**
 ```
 return name + "," + id + "," + String.format("%.1f", grade);
 ```
-- **`split(String regex)`**  
+
+* **Concatenação**
 ```
-  String[] values = line.split(",");
+return name + "," + id + "," + String.format("%.1f", grade);
+System.out.println("Arithmetic Mean of Grades: " + meanGrade);
 ```
-- **`Double.parseDouble()`**  
+
+* **`split(String regex)`**
 ```
-  double grade = Double.parseDouble(values[2]);
+String[] values = line.split(",");
 ```
-- **Concatenação**  
+
+* **`Double.parseDouble()`**
 ```
-  return name + "," + id + "," + String.format("%.1f", grade);
+double grade = Double.parseDouble(values[2]);
 ```
-- **`String.valueOf()`**  
+
+* **`BufferedReader.readLine()`**
 ```
-  String id = String.valueOf(1000 + i);
-```
-- **`indexOf(String)` e `indexOf(String, int)`**  
-```
-  int startIndex = json.indexOf("\"name\":") + 8;
-  int firstNameIndex = json.indexOf("\"first\"", startIndex) + 9;
-```
-- **`substring(int begin, int end)`**  
-```
-  String firstName = json.substring(firstNameIndex, firstNameEnd);
-  String lastName = json.substring(lastNameIndex, lastNameEnd);
-```
-- **`StringBuilder.append()` e `StringBuilder.toString()`**  
-```
-  StringBuilder response = new StringBuilder();
-  response.append(line);
-  return response.toString();
-```
-- **`BufferedReader.readLine()`**  
-```
-  String line = br.readLine();
-  while ((line = br.readLine()) != null) { ... }
+String line = br.readLine();
+while ((line = br.readLine()) != null) { ... }
 ```
 
 <br>
@@ -104,6 +90,49 @@ Para trocar o nome pode-se trocar o nome no código, então trocar `public class
 Cria o objeto da classe `Student`, que chama o construtor que define e incializa os atributos: nome, id e nota lidos do arquivo CSV. 
 
 **10 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings. 
+
+* **`String.valueOf()`**
+```
+String id = String.valueOf(1000 + i);
+```
+
+* **`String.format()`**
+```
+return name + "," + id + "," + String.format("%.1f", grade);
+```
+
+* **Concatenação com `+`**
+```
+name = firstName + " " + lastName;
+```
+
+* **`StringBuilder.append()`**
+```
+response.append(line);
+```
+
+* **`StringBuilder.toString()`**
+```
+return response.toString();
+```
+
+* **`BufferedReader.readLine()`**
+```
+while ((line = reader.readLine()) != null) {
+```
+
+* **`indexOf(String)` e `indexOf(String, int)`**
+```
+int startIndex = json.indexOf("\"name\":") + 8;
+int firstNameIndex = json.indexOf("\"first\"", startIndex) + 9;
+int lastNameIndex = json.indexOf("\"last\"", firstNameEnd) + 8;
+```
+
+* **`substring(int begin, int end)`**
+```
+String firstName = json.substring(firstNameIndex, firstNameEnd);
+String lastName = json.substring(lastNameIndex, lastNameEnd);
+```
   
 ---
 
