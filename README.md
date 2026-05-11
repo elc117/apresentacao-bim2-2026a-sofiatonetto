@@ -102,12 +102,14 @@ Para trocar o nome pode-se trocar o nome no código, então trocar `public class
   Student student = new Student(name, id, grade);
 ```
 Cria o objeto da classe `Student`, que chama o construtor que define e incializa os atributos: nome, id e nota lidos do arquivo CSV. 
+
+**10 -> Em Java, strings são objetos da classe String. Identifique no código algumas operações que podemos fazer com strings. 
   
 ---
 
 ## Parte Exploratória: 
 
-* **URL do Código:** [E-commerce-project-springBoot](https://github.com/jaygajera17/E-commerce-project-springBoot)
+* **URL do Código:** [jaygajera17/E-commerce-project-springBoot](https://github.com/jaygajera17/E-commerce-project-springBoot)
 * **Trecho do Código:**
 ```
 @Controller
@@ -230,7 +232,14 @@ public class UserController {
 
 }
 ```
+
+**Comentário:** <br>
+Escolhi a classe `UserController` que controla as páginas do usuário no site. Identifiquei os 2 atributos e o construtor que usa o `this`, igual ao que tem na classe Student da aula. Os métodos do código controlam o login, o registro e listagem dos produtos.
+Não que não tenha entendido, mas por não lembrar da exitência por ter usado pouco, as anotações como `@Controller`, `@GetMapping` e `@PostMapping` que foi diferente do código de aula também que não tinha isso, mas que, pelo que pesquisei, adicionam informações ao código e que são lidas pelo compilador na execução, linkando isso, entendi que seria uma forma de indicar o que cadas parte é, eu tinha usado somente o `@Test`. Então o `@Controller` avisaria ao Spring (framework) que nunca trabalhei, que essa classe é um controlador, o `GetMapping` e `PostMapping` associa a URLs do site (tipo GET e POST do trabalho de Haskell). Não entendi como o `@Autowired` funciona nem como o Spring trabalha com isso, mas achei interessante o uso disso em código.
+
 # Referências:
 * [Material aula 1 POO](https://liascript.github.io/course/?https://raw.githubusercontent.com/AndreaInfUFSM/elc117-2026a/main/classes/19/README.md#7)
 * [String em Java](https://www.devmedia.com.br/trabalhando-com-string-string-em-java/21737)
 * [Strings e Java](https://www.devmedia.com.br/string-em-java-entendendo-e-utilizando-essa-classe/25503?utm_dev=google_ads_pmax&gad_source=1&gad_campaignid=22326280955&gbraid=0AAAAADrVyXFMgoL1TqNUefVs3dqW8U84K&gclid=Cj0KCQjw2YDQBhD_ARIsAE1qeSfFeTPUqMqHY_OcThJfmwoNEm58WpaLUpGcT2AxwxIiYO7vm1tn7TcaAtQgEALw_wcB)
+* [Anotações em Java](https://www.devmedia.com.br/entendendo-anotacoes-em-java/26772)
+* [Spring](https://www.alura.com.br/artigos/spring-boot?utm_term=&utm_campaign=&utm_source=google&utm_medium=cpc&campaign_id=23805973578__&utm_id=23805973578__&hsa_acc=7964138385&hsa_cam=&hsa_grp=&hsa_ad=&hsa_src=x&hsa_tgt=&hsa_kw=&hsa_mt=&hsa_net=google&hsa_ver=3&gad_source=1&gad_campaignid=23815806613&gbraid=0AAAAADpqZIARVlDPeSah8R_v_U69ibrik&gclid=Cj0KCQjw2YDQBhD_ARIsAE1qeSfc0lW3etz2WtEQ-wXJdYIsBuT6YxdwoSnXyy8GH3MhKK-LSTYSZjoaAqfdEALw_wcB)
