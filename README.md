@@ -22,9 +22,13 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 22 13 25" src="https://github.com/user-attachments/assets/4aa0d406-e63d-46f8-9087-61042a4cae6f" />
 
 * **Testando outras formas:**
+  Esses códigos na verdade foi da confusão que fiz, pois só depois vi no material da aula que o `students.csv` tinha informação dentro, mas antes de ver isso eu executei e deu erro porque o arquivo .csv que o `StudentGrades.java` procurava não existia porque eu não criei ele já que não tinha visto ele linkado no material, depois de criar e executar a média dava 0.0, então alterei o `GenerateGradesData.java` porque ele gerava o arquivo `morestudents.csv` e o meu não tinha esse nome. Com essas mudaças consegui um resultado também, porém do jeito mais complicado, mas deixo os gifs da execução dessas mudanças.
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 19 12 43" src="https://github.com/user-attachments/assets/1337f40e-e39d-4ae0-bfbc-78e65f931ce9" />
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 54 36" src="https://github.com/user-attachments/assets/1b1281c0-3054-42fd-ad56-4217f3d8fe7c" />
-### Dificuldades
+<br>
+
+### Dificuldades 
+<br>
 * GitHub: Durante um commit, ocorreu um problema de versionamento no meu github local e servidor, porque editei meu Readme e criei outros arquivos, então precisei sincronizar as versões. Para isso utilizei `git pull --rebase`.
 * Execução: EU não tinha criado o arquivo `students.csv` então apareceu o erro do primeiro gif, então criei o arquivo e consegui executar o código.
 * Execução: Após executar o código Generate e Student, o `students.csv` ficou vazio, percebi que isso aconteceu porque o código do GenerateStudentData criava uma planilha e colocava os 10 gerados na `morestudents.csv` por isso não aparecia nada e a média era 0. Então para testar alterei e executei novamente, obtendo resultado diferente (último gif). 
