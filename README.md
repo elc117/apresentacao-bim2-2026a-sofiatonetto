@@ -12,12 +12,12 @@ Já no Codespace, criei os arquivos com o mesmo nome das `public class` do códi
 <img width="350" height="300" alt="Screen Recording 2026-05-10 at 18 31 03" src="https://github.com/user-attachments/assets/fe27a65c-f607-4ae8-acf4-13c9a572d671" />
 <br>
 * **Código 1:**<br>
-	Para compilar: `javac StudentGrades.java`
+	Para compilar: `javac StudentGrades.java`<br>
 	Para executar: `java StudentGrades` <br>
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 18 42 16" src="https://github.com/user-attachments/assets/c6a28416-6d02-48f9-9c04-760346f953c4" />
 
 * **Código 2:**<br>
-	Para compilar: `javac GenerateStudentData.java`
+	Para compilar: `javac GenerateStudentData.java`<br>
 	Para executar: `java GenerateStudentData`<br>
 <img width="658" height="408" alt="Screen Recording 2026-05-10 at 22 13 25" src="https://github.com/user-attachments/assets/4aa0d406-e63d-46f8-9087-61042a4cae6f" />
 
